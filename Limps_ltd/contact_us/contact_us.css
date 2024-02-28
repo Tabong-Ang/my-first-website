@@ -1,0 +1,107 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #367277;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px dotted #fff;
+    margin: 0;
+}
+
+ul {
+    width: 1300px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+}
+
+ul a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul .logo  {
+    margin-right: auto;
+}
+
+ul .donate {
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 black ;
+}
+
+.container {
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sub_container {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    font-weight: bold;
+    color: gold;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+form {
+    padding: 8px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    color-scheme: inherit; 
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 10px;
+  }
+  
+  label {
+    font-weight: 500;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 4px;
+  }
+
+  .name {
+    flex-grow: 1;
+    flex-basis: 120px;
+  }
+  .email {
+    flex-grow: 2;
+    flex-basis: 170px;
+  }
+
+  .message {
+    flex-grow:3 ;
+    flex-basis: 200px;
+}
+
+  button {
+    flex-grow: 1;
+    flex-basis: 70px;
+    height: 2.5rem;
+  }

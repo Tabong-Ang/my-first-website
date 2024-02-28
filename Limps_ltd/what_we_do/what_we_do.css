@@ -1,0 +1,107 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #367277;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px dotted #fff;
+}
+
+ul {
+    width: 1300px;
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+    margin: 14px 10px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul .donate a {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: rgb(40, 226, 40);
+}
+
+ul .logo {
+    margin-right: auto;
+}
+
+.info {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    margin: 32px auto;
+}
+
+h1 {
+    text-align: left;
+    background-color: rgb(40, 226, 40);
+    width: fit-content;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    margin-top: 60px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0.4, 0.4, 0.4, 0.4);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+    color: gold;
+}
+
+.section {
+    display: flex;
+    color: gold;
+    padding: 10px;
+    margin: 10px;
+    gap: 8px;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.program {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 10px;
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0.4, 0.4, 0.4, 0.4);
+}
+
+.testimonial {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 32px auto;
+}
+
+ 
