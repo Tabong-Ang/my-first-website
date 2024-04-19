@@ -1,211 +1,273 @@
 /* Stylesheet */
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
+/* Header Begins */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
 }
 
-nav {
-    padding: 8px;
+html {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
+.container {
+    background-color: rgb(0, 0, 20);
+    padding-bottom: 40px;
+}
+
+
+#navbar {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
-    list-style-type: none;
-    align-items: baseline;
-    gap: 16px;
-    padding: 10px 170px 0px;
-    flex-wrap: wrap;
-    margin: 0;
+    justify-content: flex-end;
+
 }
 
+#nav-links {
+    width: 90%;
+    margin: 12px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
 
+@media (max-width: 720px) {
 
-ul a {
+    .container {
+        background-color: rgb(0, 0, 20);
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    #nav-links {
+        width: 90%;
+        margin: 12px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+#navbar li {
+    list-style-type: none;
+}
+
+#nav-links a {
     text-decoration: none;
     color: white;
 }
 
+li .home {
+    text-align: left;
+}
 
-
-
-li.logo {
-    margin-right: auto;
-    font-weight: bold;
+span {
+    padding-left: 700px;
 }
 
 
-
-.container {
-    background-color: rgba(0, 0, 20, 0.966);
-    margin-bottom: 60px;
-    padding-bottom: 60px;
-}
+/* Header Ends */
 
 
 
 .content {
     display: flex;
-    padding: 0 170px;
     flex-flow: row wrap;
+    color: white;
+    width: 90%;
+    margin: 12px auto;
 }
-
 
 
 article {
-    margin-right: auto;
-    align-items: baseline;
+    width: 50%;
     display: flex;
-    flex-flow: column wrap ;
-}
-
-
-
-h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 32px;
-    padding-bottom: 0px;
-    margin-bottom: -5px;
-    width: 400px;
-    height: fit-content;
+    flex-flow: column wrap;
     text-align: center;
+    gap: 2em;
 }
 
 
-p {
+article h1 {
+    font-size: 36px;
+}
+
+article > p {
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.button1 {
+    width: 30%;
+    margin: 0 auto;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(3, 150, 106);
+}
+
+
+@media (max-width: 700px) {
+
+    .button1 {
+        display: none;
+        /* width: 100%;
+        margin: 0 auto;
+        padding: 12px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(3, 150, 106); */
+    }
+
+}
+
+
+.button1 a, button a {
+    text-decoration: none;
     color: white;
-    width: 500px;
-    line-height: 1.4;
-    height: fit-content;
+    font-size: large;
 }
-
 
 
 img.one {
-    width: 450px;
-    height: 250px;
-}
-
-
-button {
-    background: rgb(15, 172, 235);
-    padding: 10px 12px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 100%;
     border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    border: 0px;
+    margin-left: auto;
 }
 
-
-
-h1.text {
+.text {
     text-align: center;
-    font-family: sans-serif, Arial, Helvetica, sans-serif;
-    color: black;
-    margin: 10px 0px;
-    padding: 10px 0px;
+    margin: 40px auto;
 }
 
 .flex-container {
+    width: 90%;
     display: flex;
-    gap: 9px;
-    padding: 10px 100px ;
-    margin: 10px 0px 80px;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: 32px auto;
+    padding: 32px 0;
+    gap: 12px;
 }
 
-div.info {
-    justify-content: center;
+.info {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: rgb(0, 0, 20);
 }
 
-div.text {
-    text-align: center;
-}
-
-div a {
-    text-decoration: none;
-    color: white;
-}
 
 div img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 
-
-h1.text {
-    text-align: center;
-}
-
-div.humanity {
-    display: flex;
-    padding: 70px 10px;
+.humanity {
+    display: block;
+    width: 60%;
+    margin: 40px auto;
+    padding: 60px 12px;
     background-color: lavender;
-    flex-direction: column;
-    align-items: center;
 }
 
-div.quote {
+@media (max-width: 700px) {
+    .humanity {
+        display: block;
+        width: 80%;
+        margin: 40px auto;
+        padding: 12px 4px;
+        background-color: lavender;
+    }
+}
+
+.quote {
+    width: 60%;
+    margin: 0 auto;
     text-align: justify;
-    font-size: 25px;
-    width: 600px;
-    height: fit-content;
-    margin: auto;
 }
 
-div.author {
+.author {
+    width: 60%;
+    margin: 0 auto;
     text-align: right;
-    font-size: 25px;
-    font-weight: bolder;
-    padding-left: 410px ;
+    font-size: larger;
+    font-weight: bold;
 }
 
-div.action {
+button {
+    padding: 12px 16px;
+    border: none;
+    background-color: rgb(3, 150, 106);
+    border-radius: 10px;
+}
+
+.action {
+    width: 50%;
+    margin: 0 auto;
     display: flex;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: rgb(10, 132, 231);
+    line-height: 1.4em;
+}
+
+@media (max-width: 700px) {
+    .action {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        padding: 32px;
+        border-radius: 10px;
+        background-color: rgb(10, 132, 231);
+        line-height: 1.4em;
+    }
+
+}
+
+.button2 {
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.time {
+    font-weight: bold;
+    color: white;
+}
+
+.decision {
+    color: white;
+}
+
+
+
+footer {
+    display: flex;
+    margin: 64px auto 0;
+    background-color: rgb(0, 0, 20);
+    height: 64px;
+    color: white;
     justify-content: center;
     align-items: center;
-    padding: 32px;
-    background-color: #3882f6;
-    margin: 100px 20%;
-    border-radius: 16px;
-    border-radius: 8px;
 }
 
-div.call {
-    align-items: baseline;
-    line-height: 20px;
+.rights a {
+    text-decoration: none;
+    color: blue;
 }
 
-div.time{
-    font-weight: 900;
-    color: white;
-    flex-grow: 1;
-}
-
-div.decision {
-    color: white;
-}
-
-button.button {
-    margin-left: auto;
-    background-color: inherit;
-    border: 2px solid white;
-    padding: 8px 25px;
-}
-
-.footer {
-    background-color: rgba(0, 0, 20, 0.966);
-    padding: 20px 0px;
-    display: flex;
-    justify-content: center;
-}
-
-p.rights {
-    text-align: center;
-}
