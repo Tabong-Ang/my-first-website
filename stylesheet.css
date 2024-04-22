@@ -122,14 +122,33 @@ article > p {
 
 @media (max-width: 700px) {
 
+    article {
+        width: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        gap: 1em;
+    }
+
+
     .button1 {
-        display: none;
-        /* width: 100%;
-        margin: 0 auto;
+        width: 50%;
+        margin: 0 auto 12px;
         padding: 12px 20px;
         border-radius: 10px;
         border: none;
-        background-color: rgb(3, 150, 106); */
+        background-color: rgb(3, 150, 106);
+    }
+
+    article h1 {
+        font-size: 30px;
+    }
+
+    article > p {
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.4em;
+        text-align: justify;
     }
 
 }
